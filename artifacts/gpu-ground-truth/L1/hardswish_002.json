@@ -1,0 +1,68 @@
+{
+  "test_case_id": "bench_v1.0.0/L1/hardswish/002",
+  "level": "L1",
+  "operator": "torch.nn.functional.hardswish",
+  "input_shape": [
+    2,
+    3,
+    8
+  ],
+  "dtype": "float64",
+  "seed": 42,
+  "known_risk": "none",
+  "output": {
+    "tensor_shape": [
+      2,
+      3,
+      8
+    ],
+    "dtype": "float64",
+    "tensor_binary_path": "artifacts/gpu-ground-truth/L1/hardswish_002_output.pt"
+  },
+  "intermediate": {
+    "binary_path": "artifacts/gpu-ground-truth/L1/hardswish_002_intermediate.pt",
+    "activations": [
+      {
+        "layer": "operator_output",
+        "shape": [
+          2,
+          3,
+          8
+        ],
+        "dtype": "float64",
+        "binary_path": "artifacts/gpu-ground-truth/L1/hardswish_002_intermediate.pt"
+      }
+    ]
+  },
+  "gradients": {
+    "binary_path": "artifacts/gpu-ground-truth/L1/hardswish_002_gradients.pt",
+    "layers": [
+      {
+        "name": "input",
+        "shape": [
+          2,
+          3,
+          8
+        ],
+        "dtype": "float64",
+        "binary_path": "artifacts/gpu-ground-truth/L1/hardswish_002_gradients.pt"
+      }
+    ]
+  },
+  "environment": {
+    "python": "3.12.3",
+    "pytorch": "2.7.0+cu128",
+    "cuda": "12.8",
+    "cudnn": 90701,
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "driver": "595.71.05",
+    "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+    "timestamp": "2026-06-20T04:19:59Z",
+    "target_bridge": {
+      "name": "ascend-torch4ms",
+      "branch": "main",
+      "commit": "6b63d1ccbcced07fcc52842dc298d4093b186e2d",
+      "url": "https://gitee.com/feixiao13/ascend-torch4ms/tree/main"
+    }
+  }
+}

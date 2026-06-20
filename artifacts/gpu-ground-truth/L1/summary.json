@@ -1,0 +1,1370 @@
+{
+  "suite": "L1",
+  "seed": 42,
+  "total_cases": 96,
+  "passed": 96,
+  "failed": 0,
+  "success_rate": 1.0,
+  "environment": {
+    "python": "3.12.3",
+    "pytorch": "2.7.0+cu128",
+    "cuda": "12.8",
+    "cudnn": 90701,
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "driver": "595.71.05",
+    "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+    "timestamp": "2026-06-20T04:19:59Z",
+    "target_bridge": {
+      "name": "ascend-torch4ms",
+      "branch": "main",
+      "commit": "6b63d1ccbcced07fcc52842dc298d4093b186e2d",
+      "url": "https://gitee.com/feixiao13/ascend-torch4ms/tree/main"
+    }
+  },
+  "passed_cases": [
+    {
+      "test_case_id": "bench_v1.0.0/L1/conv1d/001",
+      "operator": "torch.nn.Conv1d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/conv1d_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/conv1d_001_output.pt",
+      "output_shape": [
+        2,
+        8,
+        64
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/conv1d/002",
+      "operator": "torch.nn.Conv1d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/conv1d_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/conv1d_002_output.pt",
+      "output_shape": [
+        1,
+        6,
+        16
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/conv2d/001",
+      "operator": "torch.nn.Conv2d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/conv2d_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/conv2d_001_output.pt",
+      "output_shape": [
+        1,
+        16,
+        32,
+        32
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/conv2d/002",
+      "operator": "torch.nn.Conv2d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/conv2d_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/conv2d_002_output.pt",
+      "output_shape": [
+        2,
+        8,
+        32,
+        32
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/conv3d/001",
+      "operator": "torch.nn.Conv3d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/conv3d_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/conv3d_001_output.pt",
+      "output_shape": [
+        1,
+        5,
+        8,
+        16,
+        16
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/conv3d/002",
+      "operator": "torch.nn.Conv3d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/conv3d_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/conv3d_002_output.pt",
+      "output_shape": [
+        1,
+        4,
+        6,
+        10,
+        10
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/conv_transpose2d/001",
+      "operator": "torch.nn.ConvTranspose2d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/conv_transpose2d_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/conv_transpose2d_001_output.pt",
+      "output_shape": [
+        1,
+        6,
+        32,
+        32
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/conv_transpose2d/002",
+      "operator": "torch.nn.ConvTranspose2d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/conv_transpose2d_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/conv_transpose2d_002_output.pt",
+      "output_shape": [
+        2,
+        5,
+        12,
+        12
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/depthwise_conv2d/001",
+      "operator": "torch.nn.Conv2d(groups=in_channels)",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/depthwise_conv2d_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/depthwise_conv2d_001_output.pt",
+      "output_shape": [
+        1,
+        8,
+        32,
+        32
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/depthwise_conv2d/002",
+      "operator": "torch.nn.Conv2d(groups=in_channels)",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/depthwise_conv2d_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/depthwise_conv2d_002_output.pt",
+      "output_shape": [
+        1,
+        12,
+        24,
+        24
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/batchnorm1d/001",
+      "operator": "torch.nn.BatchNorm1d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/batchnorm1d_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/batchnorm1d_001_output.pt",
+      "output_shape": [
+        4,
+        8,
+        16
+      ],
+      "gradient_count": 3,
+      "known_risk": "semantic_diff"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/batchnorm1d/002",
+      "operator": "torch.nn.BatchNorm1d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/batchnorm1d_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/batchnorm1d_002_output.pt",
+      "output_shape": [
+        6,
+        10
+      ],
+      "gradient_count": 3,
+      "known_risk": "semantic_diff"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/batchnorm2d/001",
+      "operator": "torch.nn.BatchNorm2d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/batchnorm2d_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/batchnorm2d_001_output.pt",
+      "output_shape": [
+        2,
+        8,
+        16,
+        16
+      ],
+      "gradient_count": 3,
+      "known_risk": "semantic_diff"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/batchnorm2d/002",
+      "operator": "torch.nn.BatchNorm2d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/batchnorm2d_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/batchnorm2d_002_output.pt",
+      "output_shape": [
+        2,
+        5,
+        12,
+        12
+      ],
+      "gradient_count": 3,
+      "known_risk": "semantic_diff"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/layernorm/001",
+      "operator": "torch.nn.LayerNorm",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/layernorm_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/layernorm_001_output.pt",
+      "output_shape": [
+        3,
+        12,
+        16
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/layernorm/002",
+      "operator": "torch.nn.LayerNorm",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/layernorm_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/layernorm_002_output.pt",
+      "output_shape": [
+        2,
+        4,
+        8,
+        8
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/groupnorm/001",
+      "operator": "torch.nn.GroupNorm",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/groupnorm_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/groupnorm_001_output.pt",
+      "output_shape": [
+        2,
+        8,
+        16,
+        16
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/groupnorm/002",
+      "operator": "torch.nn.GroupNorm",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/groupnorm_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/groupnorm_002_output.pt",
+      "output_shape": [
+        2,
+        12,
+        8,
+        8
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/instancenorm/001",
+      "operator": "torch.nn.InstanceNorm2d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/instancenorm_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/instancenorm_001_output.pt",
+      "output_shape": [
+        2,
+        6,
+        16,
+        16
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/instancenorm/002",
+      "operator": "torch.nn.InstanceNorm1d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/instancenorm_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/instancenorm_002_output.pt",
+      "output_shape": [
+        2,
+        5,
+        12
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/rmsnorm/001",
+      "operator": "torch.nn.RMSNorm",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/rmsnorm_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/rmsnorm_001_output.pt",
+      "output_shape": [
+        2,
+        8,
+        16
+      ],
+      "gradient_count": 2,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/rmsnorm/002",
+      "operator": "torch.nn.RMSNorm",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/rmsnorm_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/rmsnorm_002_output.pt",
+      "output_shape": [
+        2,
+        6,
+        10
+      ],
+      "gradient_count": 2,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/relu/001",
+      "operator": "torch.nn.functional.relu",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/relu_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/relu_001_output.pt",
+      "output_shape": [
+        4,
+        16
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/relu/002",
+      "operator": "torch.nn.functional.relu",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/relu_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/relu_002_output.pt",
+      "output_shape": [
+        2,
+        3,
+        8
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/gelu/001",
+      "operator": "torch.nn.functional.gelu",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/gelu_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/gelu_001_output.pt",
+      "output_shape": [
+        4,
+        16
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/gelu/002",
+      "operator": "torch.nn.functional.gelu",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/gelu_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/gelu_002_output.pt",
+      "output_shape": [
+        2,
+        3,
+        8
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/silu/001",
+      "operator": "torch.nn.functional.silu",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/silu_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/silu_001_output.pt",
+      "output_shape": [
+        4,
+        16
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/silu/002",
+      "operator": "torch.nn.functional.silu",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/silu_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/silu_002_output.pt",
+      "output_shape": [
+        2,
+        3,
+        8
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/leaky_relu/001",
+      "operator": "torch.nn.functional.leaky_relu",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/leaky_relu_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/leaky_relu_001_output.pt",
+      "output_shape": [
+        4,
+        16
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/leaky_relu/002",
+      "operator": "torch.nn.functional.leaky_relu",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/leaky_relu_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/leaky_relu_002_output.pt",
+      "output_shape": [
+        2,
+        3,
+        8
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/sigmoid/001",
+      "operator": "torch.sigmoid",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/sigmoid_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/sigmoid_001_output.pt",
+      "output_shape": [
+        4,
+        16
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/sigmoid/002",
+      "operator": "torch.sigmoid",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/sigmoid_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/sigmoid_002_output.pt",
+      "output_shape": [
+        2,
+        3,
+        8
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/tanh/001",
+      "operator": "torch.tanh",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/tanh_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/tanh_001_output.pt",
+      "output_shape": [
+        4,
+        16
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/tanh/002",
+      "operator": "torch.tanh",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/tanh_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/tanh_002_output.pt",
+      "output_shape": [
+        2,
+        3,
+        8
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/softmax/001",
+      "operator": "torch.nn.functional.softmax",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/softmax_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/softmax_001_output.pt",
+      "output_shape": [
+        4,
+        16
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/softmax/002",
+      "operator": "torch.nn.functional.softmax",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/softmax_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/softmax_002_output.pt",
+      "output_shape": [
+        2,
+        3,
+        8
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/mish/001",
+      "operator": "torch.nn.functional.mish",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/mish_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/mish_001_output.pt",
+      "output_shape": [
+        4,
+        16
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/mish/002",
+      "operator": "torch.nn.functional.mish",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/mish_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/mish_002_output.pt",
+      "output_shape": [
+        2,
+        3,
+        8
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/hardswish/001",
+      "operator": "torch.nn.functional.hardswish",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/hardswish_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/hardswish_001_output.pt",
+      "output_shape": [
+        4,
+        16
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/hardswish/002",
+      "operator": "torch.nn.functional.hardswish",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/hardswish_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/hardswish_002_output.pt",
+      "output_shape": [
+        2,
+        3,
+        8
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/linear/001",
+      "operator": "torch.nn.Linear",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/linear_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/linear_001_output.pt",
+      "output_shape": [
+        4,
+        32
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/linear/002",
+      "operator": "torch.nn.Linear",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/linear_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/linear_002_output.pt",
+      "output_shape": [
+        2,
+        5,
+        7
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/matmul/001",
+      "operator": "torch.matmul",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/matmul_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/matmul_001_output.pt",
+      "output_shape": [
+        8,
+        4
+      ],
+      "gradient_count": 2,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/matmul/002",
+      "operator": "torch.matmul",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/matmul_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/matmul_002_output.pt",
+      "output_shape": [
+        2,
+        8,
+        5
+      ],
+      "gradient_count": 2,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/bmm/001",
+      "operator": "torch.bmm",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/bmm_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/bmm_001_output.pt",
+      "output_shape": [
+        3,
+        8,
+        4
+      ],
+      "gradient_count": 2,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/bmm/002",
+      "operator": "torch.bmm",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/bmm_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/bmm_002_output.pt",
+      "output_shape": [
+        2,
+        6,
+        7
+      ],
+      "gradient_count": 2,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/einsum/001",
+      "operator": "torch.einsum",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/einsum_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/einsum_001_output.pt",
+      "output_shape": [
+        2,
+        3,
+        5
+      ],
+      "gradient_count": 2,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/einsum/002",
+      "operator": "torch.einsum",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/einsum_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/einsum_002_output.pt",
+      "output_shape": [
+        3,
+        5
+      ],
+      "gradient_count": 2,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/scaled_dot_product_attention/001",
+      "operator": "torch.nn.functional.scaled_dot_product_attention",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/scaled_dot_product_attention_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/scaled_dot_product_attention_001_output.pt",
+      "output_shape": [
+        2,
+        2,
+        8,
+        16
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/scaled_dot_product_attention/002",
+      "operator": "torch.nn.functional.scaled_dot_product_attention",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/scaled_dot_product_attention_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/scaled_dot_product_attention_002_output.pt",
+      "output_shape": [
+        1,
+        4,
+        6,
+        8
+      ],
+      "gradient_count": 3,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/maxpool2d/001",
+      "operator": "torch.nn.MaxPool2d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/maxpool2d_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/maxpool2d_001_output.pt",
+      "output_shape": [
+        2,
+        3,
+        16,
+        16
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/maxpool2d/002",
+      "operator": "torch.nn.MaxPool2d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/maxpool2d_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/maxpool2d_002_output.pt",
+      "output_shape": [
+        1,
+        4,
+        9,
+        9
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/avgpool2d/001",
+      "operator": "torch.nn.AvgPool2d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/avgpool2d_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/avgpool2d_001_output.pt",
+      "output_shape": [
+        2,
+        3,
+        16,
+        16
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/avgpool2d/002",
+      "operator": "torch.nn.AvgPool2d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/avgpool2d_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/avgpool2d_002_output.pt",
+      "output_shape": [
+        1,
+        4,
+        9,
+        9
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/adaptive_avgpool2d/001",
+      "operator": "torch.nn.AdaptiveAvgPool2d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/adaptive_avgpool2d_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/adaptive_avgpool2d_001_output.pt",
+      "output_shape": [
+        2,
+        3,
+        7,
+        7
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/adaptive_avgpool2d/002",
+      "operator": "torch.nn.AdaptiveAvgPool2d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/adaptive_avgpool2d_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/adaptive_avgpool2d_002_output.pt",
+      "output_shape": [
+        1,
+        4,
+        1,
+        1
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/adaptive_maxpool2d/001",
+      "operator": "torch.nn.AdaptiveMaxPool2d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/adaptive_maxpool2d_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/adaptive_maxpool2d_001_output.pt",
+      "output_shape": [
+        2,
+        3,
+        7,
+        7
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/adaptive_maxpool2d/002",
+      "operator": "torch.nn.AdaptiveMaxPool2d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/adaptive_maxpool2d_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/adaptive_maxpool2d_002_output.pt",
+      "output_shape": [
+        1,
+        4,
+        1,
+        1
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/dropout/001",
+      "operator": "torch.nn.Dropout",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/dropout_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/dropout_001_output.pt",
+      "output_shape": [
+        4,
+        16
+      ],
+      "gradient_count": 1,
+      "known_risk": "semantic_diff"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/dropout/002",
+      "operator": "torch.nn.Dropout",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/dropout_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/dropout_002_output.pt",
+      "output_shape": [
+        2,
+        3,
+        8
+      ],
+      "gradient_count": 1,
+      "known_risk": "semantic_diff"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/dropout2d/001",
+      "operator": "torch.nn.Dropout2d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/dropout2d_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/dropout2d_001_output.pt",
+      "output_shape": [
+        2,
+        4,
+        8,
+        8
+      ],
+      "gradient_count": 1,
+      "known_risk": "semantic_diff"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/dropout2d/002",
+      "operator": "torch.nn.Dropout2d",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/dropout2d_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/dropout2d_002_output.pt",
+      "output_shape": [
+        1,
+        3,
+        6,
+        6
+      ],
+      "gradient_count": 1,
+      "known_risk": "semantic_diff"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/cat/001",
+      "operator": "torch.cat",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/cat_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/cat_001_output.pt",
+      "output_shape": [
+        2,
+        8
+      ],
+      "gradient_count": 0,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/cat/002",
+      "operator": "torch.cat",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/cat_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/cat_002_output.pt",
+      "output_shape": [
+        4,
+        2,
+        4
+      ],
+      "gradient_count": 0,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/reshape/001",
+      "operator": "torch.reshape",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/reshape_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/reshape_001_output.pt",
+      "output_shape": [
+        6,
+        4
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/reshape/002",
+      "operator": "torch.reshape",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/reshape_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/reshape_002_output.pt",
+      "output_shape": [
+        2,
+        12
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/permute/001",
+      "operator": "torch.permute",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/permute_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/permute_001_output.pt",
+      "output_shape": [
+        2,
+        4,
+        3
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/permute/002",
+      "operator": "torch.permute",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/permute_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/permute_002_output.pt",
+      "output_shape": [
+        2,
+        4,
+        5,
+        3
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/index_select/001",
+      "operator": "torch.index_select",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/index_select_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/index_select_001_output.pt",
+      "output_shape": [
+        3,
+        7
+      ],
+      "gradient_count": 0,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/index_select/002",
+      "operator": "torch.index_select",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/index_select_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/index_select_002_output.pt",
+      "output_shape": [
+        4,
+        3,
+        8
+      ],
+      "gradient_count": 0,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/expand_repeat/001",
+      "operator": "torch.Tensor.expand",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/expand_repeat_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/expand_repeat_001_output.pt",
+      "output_shape": [
+        4,
+        3,
+        5
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/expand_repeat/002",
+      "operator": "torch.Tensor.repeat",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/expand_repeat_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/expand_repeat_002_output.pt",
+      "output_shape": [
+        2,
+        4,
+        6
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/scatter/001",
+      "operator": "torch.Tensor.scatter",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/scatter_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/scatter_001_output.pt",
+      "output_shape": [
+        3,
+        5
+      ],
+      "gradient_count": 0,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/scatter/002",
+      "operator": "torch.Tensor.scatter_add",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/scatter_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/scatter_002_output.pt",
+      "output_shape": [
+        2,
+        4
+      ],
+      "gradient_count": 0,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/gather/001",
+      "operator": "torch.gather",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/gather_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/gather_001_output.pt",
+      "output_shape": [
+        3,
+        3
+      ],
+      "gradient_count": 0,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/gather/002",
+      "operator": "torch.gather",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/gather_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/gather_002_output.pt",
+      "output_shape": [
+        2,
+        4,
+        2
+      ],
+      "gradient_count": 0,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/sum/001",
+      "operator": "torch.sum",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/sum_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/sum_001_output.pt",
+      "output_shape": [
+        3,
+        5
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/sum/002",
+      "operator": "torch.sum",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/sum_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/sum_002_output.pt",
+      "output_shape": [
+        2,
+        1,
+        1
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/mean/001",
+      "operator": "torch.mean",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/mean_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/mean_001_output.pt",
+      "output_shape": [
+        3,
+        5
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/mean/002",
+      "operator": "torch.mean",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/mean_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/mean_002_output.pt",
+      "output_shape": [
+        2,
+        1,
+        1
+      ],
+      "gradient_count": 1,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/argmax/001",
+      "operator": "torch.argmax",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/argmax_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/argmax_001_output.pt",
+      "output_shape": [
+        3,
+        5
+      ],
+      "gradient_count": 0,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/argmax/002",
+      "operator": "torch.argmax",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/argmax_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/argmax_002_output.pt",
+      "output_shape": [
+        2,
+        3,
+        1
+      ],
+      "gradient_count": 0,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/topk/001",
+      "operator": "torch.topk",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/topk_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/topk_001_output.pt",
+      "output_shape": [
+        3,
+        3
+      ],
+      "gradient_count": 0,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/topk/002",
+      "operator": "torch.topk",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/topk_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/topk_002_output.pt",
+      "output_shape": [
+        2,
+        4,
+        2
+      ],
+      "gradient_count": 0,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/sort/001",
+      "operator": "torch.sort",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/sort_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/sort_001_output.pt",
+      "output_shape": [
+        3,
+        8
+      ],
+      "gradient_count": 0,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/sort/002",
+      "operator": "torch.sort",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/sort_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/sort_002_output.pt",
+      "output_shape": [
+        2,
+        4,
+        6
+      ],
+      "gradient_count": 0,
+      "known_risk": "none"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/polar/001",
+      "operator": "torch.polar",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/polar_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/polar_001_output.pt",
+      "output_shape": [
+        4,
+        5
+      ],
+      "gradient_count": 0,
+      "known_risk": "missing_op"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/polar/002",
+      "operator": "torch.polar",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/polar_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/polar_002_output.pt",
+      "output_shape": [
+        2,
+        3
+      ],
+      "gradient_count": 0,
+      "known_risk": "missing_op"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/complex_mult/001",
+      "operator": "complex multiplication",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/complex_mult_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/complex_mult_001_output.pt",
+      "output_shape": [
+        4,
+        5
+      ],
+      "gradient_count": 0,
+      "known_risk": "missing_op"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/complex_mult/002",
+      "operator": "complex multiplication",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/complex_mult_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/complex_mult_002_output.pt",
+      "output_shape": [
+        2,
+        3
+      ],
+      "gradient_count": 0,
+      "known_risk": "missing_op"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/view_as_real/001",
+      "operator": "torch.view_as_real",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/view_as_real_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/view_as_real_001_output.pt",
+      "output_shape": [
+        4,
+        5,
+        2
+      ],
+      "gradient_count": 0,
+      "known_risk": "missing_op"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/view_as_real/002",
+      "operator": "torch.view_as_real",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/view_as_real_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/view_as_real_002_output.pt",
+      "output_shape": [
+        2,
+        3,
+        2
+      ],
+      "gradient_count": 0,
+      "known_risk": "missing_op"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/rope/001",
+      "operator": "RoPE",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/rope_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/rope_001_output.pt",
+      "output_shape": [
+        2,
+        8,
+        16
+      ],
+      "gradient_count": 0,
+      "known_risk": "numeric_unstable"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/rope/002",
+      "operator": "RoPE",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/rope_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/rope_002_output.pt",
+      "output_shape": [
+        1,
+        6,
+        12
+      ],
+      "gradient_count": 0,
+      "known_risk": "numeric_unstable"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/complex_abs_angle/001",
+      "operator": "torch.abs/torch.angle",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/complex_abs_angle_001.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/complex_abs_angle_001_output.pt",
+      "output_shape": [
+        4,
+        5,
+        2
+      ],
+      "gradient_count": 0,
+      "known_risk": "missing_op"
+    },
+    {
+      "test_case_id": "bench_v1.0.0/L1/complex_abs_angle/002",
+      "operator": "torch.abs/torch.angle",
+      "status": "passed",
+      "json_path": "artifacts/gpu-ground-truth/L1/complex_abs_angle_002.json",
+      "output_path": "artifacts/gpu-ground-truth/L1/complex_abs_angle_002_output.pt",
+      "output_shape": [
+        2,
+        3,
+        2
+      ],
+      "gradient_count": 0,
+      "known_risk": "missing_op"
+    }
+  ],
+  "failed_cases": []
+}
