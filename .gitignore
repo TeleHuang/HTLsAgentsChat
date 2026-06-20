@@ -1,0 +1,17 @@
+# 二进制张量文件（太大，不入 Git）
+*.pt
+*.pth
+*.bin
+
+# 大文件 (>10MB) 的 artifacts
+artifacts/gpu-ground-truth/**/*.pt
+artifacts/npu-results/**/*.pt
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
