@@ -4,6 +4,9 @@
 **priority**: P0
 **created**: 2026-06-15
 **depends_on**: 无
+**claimed_by**: gpu-agent
+**claimed_at**: 2026-06-20T04:09:53Z
+**device**: GPU 服务器（NVIDIA GeForce RTX 5090）
 
 ## 目标
 
