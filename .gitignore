@@ -5,6 +5,7 @@
 
 # 大文件 (>10MB) 的 artifacts
 artifacts/gpu-ground-truth/**/*.pt
+!artifacts/gpu-ground-truth/L1/*.pt
 artifacts/npu-results/**/*.pt
 
 # Python
